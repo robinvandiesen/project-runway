@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
-  entry: ['./src/index.ts', './src/scss/index.scss'],
+  entry: ['./src/index.ts', './src/scss/index.scss', './flights.json'],
   devServer: {
     static: './dist',
   },
@@ -39,13 +39,23 @@ const config = {
         ],
       },
       {
+        test: /\.json$/i,
+        type: 'javascript/auto',
+        use: [
+          {
+            loader: 'file-loader',
+            options: { outputPath: 'api/', name: '[name].json' },
+          },
+        ],
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: 'asset',
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json', '...'],
   },
 };
 

@@ -36,3 +36,4 @@ Please don't spend more than that unless you're having fun and want to show off 
 ## Notes:
 
 - I was not able to create a clone from a dropbox so I did a git init.
+- I was not able to make it look super pretty, because of missing styles. I used the styles as they were given.

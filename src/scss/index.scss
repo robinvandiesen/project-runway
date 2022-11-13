@@ -1,4 +1,5 @@
-$background-icons-path: "../icons" !default;
+$background-icons-path: '../icons' !default;
 
-@import "style-fundamentals/all";
-@import "style-core/all";
+@import 'style-fundamentals/all';
+@import 'style-core/all';
+@import 'style-custom/all';

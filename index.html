@@ -3,10 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <title>Webpack App</title>
-    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <h2>Tip: Check your console</h2>
+    <main>
+      <div class="rw-ui-container">
+        <div class="rw-ui-inner">
+          <h1>Departure information</h1>
+          <form>
+            <div class="variant-container">
+              <div
+                class="rw-input rw-input--error"
+                data-component="rw-input-element"
+                data-realtime="true"
+                data-required="true"
+                data-component-id="bdf23ed2-8661-4a17-ae14-e5caaf2940bb"
+              >
+                <label for="regular" class="rw-input-label"> Text input </label>
+
+                <input
+                  id="regular"
+                  class="rw-input-text"
+                  data-input="true"
+                  autocorrect="off"
+                  required="required"
+                  placeholder="Please fill me in"
+                  aria-required="true"
+                  type="text"
+                />
+
+                <label for="regular" class="rw-input__notification"></label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
