@@ -31,6 +31,17 @@ Please don't spend more than that unless you're having fun and want to show off 
 - We like using the latest features of ES6 where applicable
 - Last but not least, have fun!
 
+# Setup
+
+## Installation
+
+- run `yarn`
+
+## Boot up dev server
+
+- run `yarn dev`
+- go to `localhost:8080`
+
 # Process
 
 ## Notes:
